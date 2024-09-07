@@ -5,7 +5,7 @@
 import openai
 
 async def ai(query):
-    openai.api_key = "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" #Your openai api key
+    openai.api_key = "sk-JZ7x18zpUD4F4AC_xAqrpO1kCA1X5oPE2vx6jvl209T3BlbkFJNbPcBMe4ziIQX6KnQ5S42jbJ-_yyd6FsmnGl05QUEA" #Your openai api key
     response = openai.Completion.create(engine="text-davinci-002", prompt=query, max_tokens=100, n=1, stop=None, temperature=0.9, timeout=5)
     return response.choices[0].text.strip()
      
